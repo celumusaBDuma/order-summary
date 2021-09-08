@@ -14,9 +14,9 @@ body {
     background-color: #e0e8ff;
     background-image: url(../images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
-    background-position: center;
+    /* background-position: center; */
     background-size: cover;
-    object-fit: cover;
+    /* object-fit: cover; */
     line-height: 1.5;
     font-size: 2.2rem;
     color: #8e95a4;
@@ -53,8 +53,8 @@ p,
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     flex-direction: column;
     justify-content: center;
-    max-width: 90%;
-    margin: 2rem auto;
+    max-width: 80%;
+    margin: 7rem auto;
     border-radius: 30px;
     background-color: #fff;
     z-index: 1;
@@ -80,7 +80,13 @@ p,
 
 @media screen and (min-width: 768px) {
     .card {
-        width: 30%;
+        max-width: 40%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        max-width: 30%;
     }
 }
 
