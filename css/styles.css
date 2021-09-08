@@ -1,0 +1,132 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #e0e8ff;
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    line-height: 1.5;
+    font-size: 2.2rem;
+    color: #8e95a4;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url(../images/pattern-background-desktop.svg);
+    }
+}
+
+h1,
+h2,
+h3 {
+    color: #282f4a;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h2,
+p,
+.plan {
+    margin-bottom: 10px;
+}
+
+.card {
+    display: flex;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    justify-content: center;
+    max-width: 90%;
+    margin: 2rem auto;
+    border-radius: 30px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.card--head {
+    background-image: url(../images/illustration-hero.svg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px 30px 0 0;
+    width: 100%;
+    height: 30vh;
+}
+
+.card--body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        width: 30%;
+    }
+}
+
+.plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    margin: 2rem 0;
+    padding: 1.2rem;
+    background-color: #f8f9fe;
+}
+
+.plan .icon {
+    padding: 0 1.5rem;
+    width: 30%;
+    height: 30%;
+}
+
+.btn {
+    width: 100%;
+    border: 0;
+    background-color: #fff;
+    color: #c6cde4;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 2rem 3rem;
+    margin-bottom: 10px;
+    transform: 1s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.btn--primary {
+    background-color: #382ae1;
+    color: #fff;
+}
+
+.attribution {
+    font-size: 1.6rem;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
