@@ -34,15 +34,15 @@ h3 {
     color: #282f4a;
 }
 
-h2 {
+h1 {
     font-size: 2.4rem;
 }
 
-h3 {
+h2 {
     font-size: 2rem;
 }
 
-h2,
+h1,
 p,
 .plan {
     margin-bottom: 10px;
